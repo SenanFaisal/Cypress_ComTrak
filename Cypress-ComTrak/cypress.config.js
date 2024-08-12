@@ -18,7 +18,7 @@ const { defineConfig } = require("cypress");
 //   }
 
 module.exports = {
-  projectId: "7zfryx",
+  projectId: "it1mi4",
   ...(on, config) => {
     on("before:browser:launch", (browser, launchOptions) => {
       if (browser.name === "chrome") {
