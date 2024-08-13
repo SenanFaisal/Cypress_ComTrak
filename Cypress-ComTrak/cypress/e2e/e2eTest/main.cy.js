@@ -41,7 +41,7 @@ beforeEach(() => {
 
 describe('ComTrak - Patient Pool Builder Test Cases', () => {
 
-  it.only('TC-01 - Create and Publish the Patient Pool', () => {
+  it('TC-01 - Create and Publish the Patient Pool', () => {
     PublishPatientPool.CreateAndPublishPatientPool()
   })
 
@@ -53,51 +53,51 @@ describe('ComTrak - Patient Pool Builder Test Cases', () => {
     DiscardPool.ExitAndDiscardPatientPool()
   })
 
-  it('TC-04 - Creating the Patient Pool with existing name', () => {
+  it.skip('TC-04 - Creating the Patient Pool with existing name', () => {
     ExistingPoolNameCheck.ExistingPoolNameCheck()
   })
 
-  it('TC-05 - Verify the Total and Adjusted Pool Patients Count', () => {
+  it.skip('TC-05 - Verify the Total and Adjusted Pool Patients Count', () => {
     DataValidation.VerifyTotalAndAdjustedCount()
   })
 
-  it('TC-06 - Verify the Details of Duplicated Published Pool', () => {
+  it.skip('TC-06 - Verify the Details of Duplicated Published Pool', () => {
     DuplicatePublishedPool.DuplicateAndVerifyPublishedPool()
   })
 
-  it('TC-07 - Verify the Details of Duplicated Saved as Draft Pool', () => {
+  it.skip('TC-07 - Verify the Details of Duplicated Saved as Draft Pool', () => {
     DuplicateSavedPool.DuplicateAndVerifySavedPool()
   })
 
-  it('TC-08 - Delete a Patient Pool from Drafts list', () => {
+  it.skip('TC-08 - Delete a Patient Pool from Drafts list', () => {
     DeleteFromDrafts.DeletePoolFromDrafts()
   })
 
-  it('TC-09 - Edit or Update the Patient Pool from Drafts list', () => {
+  it.skip('TC-09 - Edit or Update the Patient Pool from Drafts list', () => {
     EditFromDrafts.EditPoolAndPublish()
   })
 
-  it('TC-10 - Review the Patient Pool from Drafts list', () => {
+  it.skip('TC-10 - Review the Patient Pool from Drafts list', () => {
     ReviewFromDrafts.ReviewFromDrafts()
   })
 
-  it('TC-11 - Inactivate the Patient Pool from Published Pool list', () => {
+  it.skip('TC-11 - Inactivate the Patient Pool from Published Pool list', () => {
     DeactivatePool.InactivatePoolFromPublishedList()
   })
 
-  it('TC-12 - Activate the Patient Pool from Published Pool list', () => {
+  it.skip('TC-12 - Activate the Patient Pool from Published Pool list', () => {
     ActivatePool.ActivateTheInactivePool()
   })
 
-  it('TC-13 - Release All Patients from Published Pool list', () => {
+  it.skip('TC-13 - Release All Patients from Published Pool list', () => {
     ReleaseAllPatients.ReleaseAllPatients()
   })
 
-  it('TC-14 - Assign a Recruiter from Published Pool list', () => {
+  it.skip('TC-14 - Assign a Recruiter from Published Pool list', () => {
     AssignToRecruiter.AssignPatientsToRecruiter()
   })
 
-  it('TC-15 - Add a Recruiter from Published Pool list', () => {
+  it.skip('TC-15 - Add a Recruiter from Published Pool list', () => {
     AddRecruiter.AddNewRecruiter()
     ()
   })

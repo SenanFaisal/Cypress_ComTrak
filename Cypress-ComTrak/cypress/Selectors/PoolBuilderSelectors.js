@@ -10,7 +10,7 @@ const PoolBuilderSelectors = {
     BTN_Continue2: 'button[class="btn btn-primary btn-next"]',
     DRP_IntendedStudy: '[ng-reflect-placeholder="Select Intended Study"] > div',
     IntendedStudy: '[ng-reflect-placeholder="Select Intended Study"] > div > div.dropdown-list > ul > li > input[aria-label="Moderna 1273-p301"]',
-    BTN_Review: '.submit-buttons',
+    BTN_Review: 'div.submit-buttons > button:nth-child(3)',
     Verify_Name: 'mat-dialog-content > div > div > div:nth-child(8)',
     Verify_Description: 'div > div:nth-child(9) > div > label > span.detail',
     Verify_State1: 'div:nth-child(13) > label > span.hashtag-container.ng-star-inserted > span:nth-child(1)',
@@ -24,5 +24,6 @@ const PoolBuilderSelectors = {
     BTN_Published: '#subMenuItem2',
     BTN_CreatePool: ' div.submit-buttons > button.btn.btn-primary.btn-sm.btn-next',
     EYE_ReviewPool: 'tr:nth-child(1) > td:nth-child(8) > div > button:nth-child(1)',
+    BTN_ExitDiscard: '.submit-buttons > button.btn.btn-outline-danger',
 }
 export default PoolBuilderSelectors

@@ -6,7 +6,7 @@ class SavePool {
         cy.origin('https://comtrak.qa.dmclinical.com/',
 
             { args: PoolBuilderSelectors },
-            ({ DRP_Leads, TXT_PoolName, Pool_Name, BTN_Create, TXT_Description, Description, BTN_Continue1, BTN_Continue2, DRP_IntendedStudy, IntendedStudy, BTN_Review, Verify_Name, Verify_Description, Verify_State1, Verify_State2, Verify_Status, Verify_Age, Verify_Study, BTN_Cross, BTN_SaveDraft, BTN_Drafts, BTN_Published, BTN_CreatePool, EYE_ReviewPool }
+            ({ DRP_Leads, TXT_PoolName, Pool_Name, BTN_Create, TXT_Description, Description, BTN_Continue1, BTN_Continue2, DRP_IntendedStudy, IntendedStudy, BTN_Review, Verify_Name, Verify_Description, Verify_State1, Verify_State2, Verify_Status, Verify_Age, Verify_Study, BTN_Cross, BTN_SaveDraft, BTN_Drafts, BTN_Published, BTN_CreatePool, EYE_ReviewPool, BTN_ExitDiscard }
             ) => {
                 cy.wait(5000)
                 cy.contains(' Sign In').click()
@@ -22,6 +22,8 @@ class SavePool {
                 cy.get(TXT_Description)
                     .type(Description)
                 cy.get(BTN_Continue1).click()
+                cy.wait(2000)
+                cy.contains('Select State').click()
                 cy.wait(2000)
                 cy.contains('Texas').click()
                 // cy.contains('New Jersey').click()
@@ -43,9 +45,9 @@ class SavePool {
                 cy.wait(2000)
                 cy.contains('Select Last Interaction Status').click()
                 cy.wait(3000)
-                cy.contains('Pre Booking').click({ force: true })
+                cy.get('div:nth-child(4) > div:nth-child(2) > ng-multiselect-dropdown > div > div.dropdown-list > ul.item2 > li:nth-child(15) > div').click({ force: true })
                 cy.wait(1000)
-                cy.contains('PreScreen Scheduled').click({ force: true })
+                cy.get('div:nth-child(4) > div:nth-child(2) > ng-multiselect-dropdown > div > div.dropdown-list > ul.item2 > li:nth-child(10) > div').click({ force: true })
                 cy.wait(2000)
                 cy.get(BTN_Continue2).contains(' Continue ').click()
                 cy.wait(2000)
