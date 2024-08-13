@@ -53,11 +53,11 @@ describe('ComTrak - Patient Pool Builder Test Cases', () => {
     DiscardPool.ExitAndDiscardPatientPool()
   })
 
-  it.skip('TC-04 - Creating the Patient Pool with existing name', () => {
+  it('TC-04 - Creating the Patient Pool with existing name', () => {
     ExistingPoolNameCheck.ExistingPoolNameCheck()
   })
 
-  it.skip('TC-05 - Verify the Total and Adjusted Pool Patients Count', () => {
+  it.only('TC-05 - Verify the Total and Adjusted Pool Patients Count', () => {
     DataValidation.VerifyTotalAndAdjustedCount()
   })
 
