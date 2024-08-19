@@ -1,0 +1,8 @@
+name: ComTrak
+on: push
+jobs:
+  my-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run cypress tests
+        run: npx cypress run
