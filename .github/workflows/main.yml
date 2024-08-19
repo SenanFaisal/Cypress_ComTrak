@@ -1,8 +1,11 @@
-name: ComTrak
+name: ComTrck
 on: push
 jobs:
   my-job:
     runs-on: ubuntu-latest
     steps:
+      - name: Install dependencies
+        run: npm install
+
       - name: Run cypress tests
         run: npx cypress run
