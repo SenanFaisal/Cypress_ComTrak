@@ -30,7 +30,7 @@ beforeEach(() => {
     cy.wait(2000)
     // cy.xpath('//button[@id="identifierNext"]').click() //--(Use if running on Electron Browser)
     cy.Click(BTN_Next)
-    cy.wait(4000)
+    cy.wait(3000)
     cy.EnterText(TXT_Password, Password_Id)
     cy.wait(2000)
     // cy.xpath('//button[@id="passwordNext"]').click() //--(Use if running on Electron Browser)
