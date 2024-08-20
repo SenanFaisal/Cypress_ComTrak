@@ -1,4 +1,4 @@
-name: ComTrak
+name: Deployment of React-Shopify
 on:
   push:
     branches:
@@ -17,9 +17,19 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: Install Packages
         run: npm install
-      - name: Install Cypress
+      - name: cypress install
         run: npm i cypress
       - name: Verify Cypress
         run: npx cypress verify
       - name: Run Cypress
-        run: npx cypress run --spec "cypress\e2e\e2eTest\main.cy.js"
+        run: npx cypress run --spec "cypress/e2e/e2eTest/main.cy.js"
+
+  cypress-run:
+    runs-on: ubuntu-latest
+    container:
+      image: cypress/included:13.13.3
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Run Cypress tests
+        run: npx cypress run --spec "cypress/e2e/e2eTest/main.cy.js"
