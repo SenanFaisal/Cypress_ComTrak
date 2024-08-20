@@ -19,7 +19,7 @@ const PoolBuilderSelectors = {
     Verify_State2: 'span.hashtag-container.ng-star-inserted > span:nth-child(2)',
     Verify_Status: 'div:nth-child(14) > label > span.hashtag-container.ng-star-inserted > span',
     Verify_Age: 'div > div > div:nth-child(16) > label > span.detail',
-    Verify_Study: 'div:nth-child(74) > label',
+    Verify_Study: 'div > div > div:nth-child(135) > label > span.detail',
     BTN_Cross: 'label[class="cancle"]',
     BTN_SaveDraft: '.submit-buttons',
     BTN_Drafts: '#subMenuItem1',
