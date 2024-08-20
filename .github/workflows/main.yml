@@ -18,4 +18,6 @@ jobs:
       - name: Install Packages
         run: npm install
       - name: Run Cypress
-        run: npx cypress run --spec "cypress\e2e\TestFileForCiCd\test.spec.js"
+        run: npx cypress run --spec "cypress\e2e\e2eTest\main.cy.js"
+
+
