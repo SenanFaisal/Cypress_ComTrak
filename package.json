@@ -1,0 +1,21 @@
+{
+  "devDependencies": {
+    "cypress": "^13.11.0",
+    "cypress-wait-until": "^3.0.2",
+    "cypress-xpath": "^2.0.1"
+  },
+  "dependencies": {
+    "cypress-real-events": "^1.13.0",
+    "xpath": "^0.0.34"
+  },
+  "name": "comtrak-automation",
+  "version": "1.0.0",
+  "description": "Automation script for Comtrak",
+  "main": "cypress.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+    
+  },
+  "author": "",
+  "license": "ISC"
+}

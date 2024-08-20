@@ -1,0 +1,28 @@
+const PoolBuilderSelectors = {
+    
+    DRP_Leads: 'a[href="#Leads"]',
+    TXT_PoolName: 'input[placeholder="Enter Pool Name"]',
+    Pool_Name: 'Auto-qa Test ' + Math.floor(Math.random() * 1000),
+    BTN_Create: '#subMenuItem0',
+    TXT_Description: '#poolDescription',
+    Description: 'Test Description',
+    BTN_Continue1: 'button[class="btn btn-primary"]',
+    BTN_Continue2: 'button[class="btn btn-primary btn-next"]',
+    DRP_IntendedStudy: '[ng-reflect-placeholder="Select Intended Study"] > div',
+    IntendedStudy: '[ng-reflect-placeholder="Select Intended Study"] > div > div.dropdown-list > ul > li > input[aria-label="Moderna 1273-p301"]',
+    BTN_Review: '.submit-buttons',
+    Verify_Name: 'mat-dialog-content > div > div > div:nth-child(8)',
+    Verify_Description: 'div > div:nth-child(9) > div > label > span.detail',
+    Verify_State1: 'div:nth-child(13) > label > span.hashtag-container.ng-star-inserted > span:nth-child(1)',
+    Verify_State2: 'span.hashtag-container.ng-star-inserted > span:nth-child(2)',
+    Verify_Status: 'div:nth-child(14) > label > span.hashtag-container.ng-star-inserted > span',
+    Verify_Age: 'div:nth-child(15) > label > span.detail',
+    Verify_Study: 'div:nth-child(74) > label',
+    BTN_Cross: 'label[class="cancle"]',
+    BTN_SaveDraft: '.submit-buttons',
+    BTN_Drafts: '#subMenuItem1',
+    BTN_Published: '#subMenuItem2',
+    BTN_CreatePool: ' div.submit-buttons > button.btn.btn-primary.btn-sm.btn-next',
+    EYE_ReviewPool: 'tr:nth-child(1) > td:nth-child(8) > div > button:nth-child(1)',
+}
+export default PoolBuilderSelectors
