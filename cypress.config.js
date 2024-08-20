@@ -30,7 +30,6 @@ module.exports = {
   },
     "chromeWebSecurity": false,
     "pageLoadTimeout": 250000,
-    "experimentalSessionAndOrigin": true,
     "defaultCommandTimeout": 10000,
       viewportWidth: 1920,
       viewportHeight: 1080,
