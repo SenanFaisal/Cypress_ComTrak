@@ -22,4 +22,4 @@ jobs:
       - name: Verify Cypress
         run: npx cypress verify
       - name: Run Cypress
-        run: npx cypress run --spec "cypress\e2e\1-getting-started\todo.cy.js"
+        run: npx cypress run --spec "cypress\e2e\e2eTest\main.cy.js"
