@@ -1,3 +1,4 @@
+<<<<<<< HEAD:package.json
 {
   "devDependencies": {
     "cypress": "^13.13.3",
@@ -18,3 +19,26 @@
   "author": "",
   "license": "ISC"
 }
+=======
+{
+  "devDependencies": {
+    "cypress": "^13.11.0",
+    "cypress-wait-until": "^3.0.2",
+    "cypress-xpath": "^2.0.1"
+  },
+  "dependencies": {
+    "cypress-real-events": "^1.13.0",
+    "xpath": "^0.0.34"
+  },
+  "name": "comtrak-automation",
+  "version": "1.0.0",
+  "description": "Automation script for Comtrak",
+  "main": "cypress.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress-dashboard-run": "npx cypress run --browser chrome --headed --record --key f62a2861-19ab-481e-8331-7033f34c9c55"
+  },
+  "author": "SenanFaisal",
+  "license": "ISC"
+}
+>>>>>>> Dev:Cypress-ComTrak/package.json

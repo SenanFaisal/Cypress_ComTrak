@@ -1,3 +1,4 @@
+<<<<<<< HEAD:cypress/Selectors/PoolBuilderSelectors.js
 const PoolBuilderSelectors = {
     
     DRP_Leads: 'a[href="#Leads"]',
@@ -25,4 +26,37 @@ const PoolBuilderSelectors = {
     BTN_CreatePool: ' div.submit-buttons > button.btn.btn-primary.btn-sm.btn-next',
     EYE_ReviewPool: 'tr:nth-child(1) > td:nth-child(8) > div > button:nth-child(1)',
 }
+=======
+const PoolBuilderSelectors = {
+    
+    DRP_Leads: 'a[href="#Leads"]',
+    TXT_PoolName: 'input[placeholder="Enter Pool Name"]',
+    Pool_Name: 'Auto-qa Test ' + Math.floor(Math.random() * 1000),
+    BTN_Create: '#subMenuItem0',
+    TXT_Description: '#poolDescription',
+    Description: 'Test Description',
+    BTN_Continue1: 'button[class="btn btn-primary"]',
+    MIN_AgeSlider: 'div.fields-col-view.mt-5 > div:nth-child(2) > div > ngx-slider > span.ngx-slider-span.ngx-slider-pointer.ngx-slider-pointer-min',
+    MAX_AgeSlider: 'div.fields-col-view.mt-5 > div:nth-child(2) > div > ngx-slider > span.ngx-slider-span.ngx-slider-pointer.ngx-slider-pointer-max',
+    BTN_Continue2: 'button[class="btn btn-primary btn-next"]',
+    DRP_IntendedStudy: '[ng-reflect-placeholder="Select Intended Study"] > div',
+    IntendedStudy: '[ng-reflect-placeholder="Select Intended Study"] > div > div.dropdown-list > ul > li > input[aria-label="Moderna 1273-p301"]',
+    BTN_Review: 'div.submit-buttons > button:nth-child(3)',
+    Verify_Name: 'mat-dialog-content > div > div > div:nth-child(8)',
+    Verify_Description: 'div > div:nth-child(9) > div > label > span.detail',
+    Verify_State1: 'div:nth-child(13) > label > span.hashtag-container.ng-star-inserted > span:nth-child(1)',
+    Verify_State2: 'span.hashtag-container.ng-star-inserted > span:nth-child(2)',
+    Verify_Status: 'div:nth-child(14) > label > span.hashtag-container.ng-star-inserted > span',
+    Verify_Age: 'div > div > div:nth-child(16) > label > span.detail',
+    Verify_Study: 'div > div > div:nth-child(135) > label > span.detail',
+    BTN_Cross: 'label[class="cancle"]',
+    BTN_SaveDraft: '.submit-buttons',
+    BTN_Drafts: '#subMenuItem1',
+    BTN_Published: '#subMenuItem2',
+    BTN_CreatePool: ' div.submit-buttons > button.btn.btn-primary.btn-sm.btn-next',
+    EYE_ReviewPool: 'tr:nth-child(1) > td:nth-child(8) > div > button:nth-child(1)',
+    BTN_ExitDiscard: '.submit-buttons > button.btn.btn-outline-danger',
+    BTN_Delete: '[class="row mt-3"] > button:nth-child(2)',
+}
+>>>>>>> Dev:Cypress-ComTrak/cypress/Selectors/PoolBuilderSelectors.js
 export default PoolBuilderSelectors
