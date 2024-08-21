@@ -27,5 +27,6 @@ const PoolBuilderSelectors = {
     BTN_CreatePool: ' div.submit-buttons > button.btn.btn-primary.btn-sm.btn-next',
     EYE_ReviewPool: 'tr:nth-child(1) > td:nth-child(8) > div > button:nth-child(1)',
     BTN_ExitDiscard: '.submit-buttons > button.btn.btn-outline-danger',
+    BTN_Delete: '[class="row mt-3"] > button:nth-child(2)',
 }
 export default PoolBuilderSelectors
