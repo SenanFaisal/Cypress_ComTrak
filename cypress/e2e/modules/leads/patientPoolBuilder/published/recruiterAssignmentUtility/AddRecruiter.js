@@ -1,4 +1,4 @@
-import PoolBuilderSelectors from '../../../../../../selectors/poolBuilderSelectors'
+import PoolBuilderSelectors from '../../../../../../Selectors/PoolBuilderSelectors'
 
 class AddRecruiter{
     AddNewRecruiter() {
