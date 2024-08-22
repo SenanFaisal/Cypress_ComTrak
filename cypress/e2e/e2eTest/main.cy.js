@@ -41,7 +41,7 @@ beforeEach(() => {
 
 describe('ComTrak - Patient Pool Builder Test Cases', () => {
 
-  it('TC-01 - Create and Publish the Patient Pool', () => {
+  it.only('TC-01 - Create and Publish the Patient Pool', () => {
     PublishPatientPool.CreateAndPublishPatientPool()
   })
 
@@ -57,7 +57,7 @@ describe('ComTrak - Patient Pool Builder Test Cases', () => {
     ExistingPoolNameCheck.ExistingPoolNameCheck()
   })
 
-  it.only('TC-05 - Verify the Total and Adjusted Pool Patients Count', () => {
+  it('TC-05 - Verify the Total and Adjusted Pool Patients Count', () => {
     DataValidation.VerifyTotalAndAdjustedCount()
   })
 
