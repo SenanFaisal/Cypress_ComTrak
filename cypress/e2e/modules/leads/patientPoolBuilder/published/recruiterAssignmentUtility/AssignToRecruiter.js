@@ -1,4 +1,4 @@
-import PoolBuilderSelectors from '../../../../../../selectors/poolBuilderSelectors'
+import PoolBuilderSelectors from '../../../../../../Selectors/PoolBuilderSelectors'
 class AssignToRecruiter{
     AssignPatientsToRecruiter() {
         cy.visit('https://comtrak.qa.dmclinical.com/')
