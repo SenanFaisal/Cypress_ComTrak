@@ -14,7 +14,7 @@ import ReleaseAllPatients from '../modules/leads/patientPoolBuilder/published/re
 import ReviewFromDrafts from '../modules/leads/patientPoolBuilder/drafts/ReviewFromDrafts.js'
 import SavePool from '../modules/leads/patientPoolBuilder/drafts/SaveToDrafts.js'
 
-import LoginSelectors from '../../selectors/loginSelectors.js'
+import LoginSelectors from '../../Selectors/LoginSelectors.js'
 
 const {TXT_Email, TXT_Password, BTN_Next, Email_Id, Password_Id} = LoginSelectors
 
