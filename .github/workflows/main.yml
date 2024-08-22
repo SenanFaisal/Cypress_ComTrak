@@ -22,7 +22,7 @@ jobs:
       - name: Verify Cypress
         run: npx cypress verify
       - name: Run Cypress
-        run: npx cypress run --spec "cypress/e2e/e2eTest/main.cy.js"
+        run: npx cypress run --browser chrome --spec "cypress/e2e/e2eTest/main.cy.js"
 
   cypress-run:
     runs-on: ubuntu-latest
@@ -32,4 +32,4 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Run Cypress tests
-        run: npx cypress run --spec "cypress/e2e/e2eTest/main.cy.js"
+        run: npx cypress run --browser chrome --spec "cypress/e2e/e2eTest/main.cy.js"
