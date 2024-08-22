@@ -1,4 +1,4 @@
-import PoolBuilderSelectors from '../../../../../selectors/poolBuilderSelectors.js'
+import PoolBuilderSelectors from '../../../../../Selectors/PoolBuilderSelectors'
 
 class EditFromDrafts{
     EditPoolAndPublish() {
