@@ -14,8 +14,10 @@ import ReleaseAllPatients from '../Modules/poolBuilderTestcases/ReleaseAllPatien
 import ReviewFromDrafts from '../Modules/poolBuilderTestcases/ReviewFromDrafts.js'
 import SavePool from '../Modules/poolBuilderTestcases/SavePool.js'
 import LoginSelectors from '../../Selectors/LoginSelectors.js'
+import PoolBuilderSelectors from '../../Selectors/PoolBuilderSelectors.js'
 
 const { TXT_Email, Email_Id, TXT_Password, Password_Id, BTN_Next, BTN_SignIn, } = LoginSelectors
+const {DRP_Leads, TXT_PoolName, Pool_Name, BTN_Create, TXT_Description, Description, BTN_Continue1, MIN_AgeSlider, MAX_AgeSlider, BTN_Continue2, DRP_IntendedStudy, IntendedStudy, BTN_Review, Verify_Name, Verify_Description, Verify_State1, Verify_State2, Verify_Status, Verify_Age, Verify_Study, BTN_Cross, BTN_SaveDraft, BTN_Drafts, BTN_Published, BTN_CreatePool, EYE_ReviewPool, BTN_ExitDiscard} = PoolBuilderSelectors
 
 before(() => {
   Cypress.session.clearAllSavedSessions()
@@ -28,13 +30,13 @@ before(() => {
     cy.wait(2000)
     cy.EnterText(TXT_Email, Email_Id)
     cy.wait(2000)
-    cy.xpath('//button[@id="identifierNext"]').click() //--(Use if running on Electron Browser)
-    // cy.Click(BTN_Next)
+    // cy.xpath('//button[@id="identifierNext"]').click() //--(Use if running on Electron Browser)
+    cy.Click(BTN_Next)
     cy.wait(4000)
     cy.EnterText(TXT_Password, Password_Id)
     cy.wait(2000)
-    cy.xpath('//button[@id="passwordNext"]').click() //--(Use if running on Electron Browser)
-    // cy.Click(BTN_Next)
+    // cy.xpath('//button[@id="passwordNext"]').click() //--(Use if running on Electron Browser)
+    cy.Click(BTN_Next)
     cy.wait(5000)
   })
 })
@@ -42,7 +44,7 @@ before(() => {
 describe('ComTrak - Patient Pool Builder Test Cases', () => {
 
   it.only('TC-01 - Create and Publish the Patient Pool', () => {
-    PublishPatientPool.CreateAndPublishPatientPool()
+    PublishPatientPool.CreateAndPublishPatientPool(DRP_Leads, TXT_PoolName, Pool_Name, BTN_Create, TXT_Description, Description, BTN_Continue1, MIN_AgeSlider, MAX_AgeSlider, BTN_Continue2, DRP_IntendedStudy, IntendedStudy, BTN_Review, Verify_Name, Verify_Description, Verify_State1, Verify_State2, Verify_Status, Verify_Age, Verify_Study, BTN_Cross, BTN_SaveDraft, BTN_Drafts, BTN_Published, BTN_CreatePool, EYE_ReviewPool, BTN_ExitDiscard)
   })
 
   it('TC-02 - Create and Save the Patient Pool', () => {
