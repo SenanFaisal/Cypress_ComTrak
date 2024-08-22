@@ -1,7 +1,7 @@
-import PoolBuilderSelectors from '../../../Selectors/PoolBuilderSelectors.js'
+import PoolBuilderSelectors from '../../../../../selectors/poolBuilderSelectors.js'
 
-class DeleteFromDrafts{
-    DeletePoolFromDrafts() {
+class DuplicatePublishedPool{
+    DuplicateAndVerifyPublishedPool() {
         cy.visit('https://comtrak.qa.dmclinical.com/')
         cy.origin('https://comtrak.qa.dmclinical.com/',
     
@@ -18,4 +18,4 @@ class DeleteFromDrafts{
           })
       }
 }
-export default new DeleteFromDrafts
+export default new DuplicatePublishedPool

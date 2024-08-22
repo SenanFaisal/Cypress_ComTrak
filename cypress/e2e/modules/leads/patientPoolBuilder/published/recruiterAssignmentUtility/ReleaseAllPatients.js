@@ -1,7 +1,7 @@
-import PoolBuilderSelectors from '../../../Selectors/PoolBuilderSelectors.js'
+import PoolBuilderSelectors from '../../../../../selectors/poolBuilderSelectors.js'
 
-class DuplicatePublishedPool{
-    DuplicateAndVerifyPublishedPool() {
+class ReleaseAllPatients{
+    ReleaseAllPatients() {
         cy.visit('https://comtrak.qa.dmclinical.com/')
         cy.origin('https://comtrak.qa.dmclinical.com/',
     
@@ -18,4 +18,4 @@ class DuplicatePublishedPool{
           })
       }
 }
-export default new DuplicatePublishedPool
+export default new ReleaseAllPatients

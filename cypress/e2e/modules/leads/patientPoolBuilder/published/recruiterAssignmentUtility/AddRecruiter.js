@@ -1,7 +1,7 @@
-import PoolBuilderSelectors from '../../../Selectors/PoolBuilderSelectors.js'
+import PoolBuilderSelectors from '../../../../../../selectors/poolBuilderSelectors'
 
-class ReviewFromDrafts{
-    ReviewFromDrafts() {
+class AddRecruiter{
+    AddNewRecruiter() {
         cy.visit('https://comtrak.qa.dmclinical.com/')
         cy.origin('https://comtrak.qa.dmclinical.com/',
     
@@ -18,4 +18,4 @@ class ReviewFromDrafts{
           })
       }
 }
-export default new ReviewFromDrafts
+export default new AddRecruiter

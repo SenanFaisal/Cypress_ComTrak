@@ -1,4 +1,4 @@
-import PoolBuilderSelectors from '../../../Selectors/PoolBuilderSelectors.js'
+import PoolBuilderSelectors from '../../../../../selectors/poolBuilderSelectors.js'
 
 class ActivatePool {
   ActivateTheInactivePool() {

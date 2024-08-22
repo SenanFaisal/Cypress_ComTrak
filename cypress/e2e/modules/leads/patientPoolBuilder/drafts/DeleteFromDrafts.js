@@ -1,7 +1,7 @@
-import PoolBuilderSelectors from '../../../Selectors/PoolBuilderSelectors.js'
+import PoolBuilderSelectors from '../../../../../selectors/poolBuilderSelectors.js'
 
-class DeactivatePool{
-    InactivatePoolFromPublishedList() {
+class DeleteFromDrafts{
+    DeletePoolFromDrafts() {
         cy.visit('https://comtrak.qa.dmclinical.com/')
         cy.origin('https://comtrak.qa.dmclinical.com/',
     
@@ -18,4 +18,4 @@ class DeactivatePool{
           })
       }
 }
-export default new DeactivatePool
+export default new DeleteFromDrafts

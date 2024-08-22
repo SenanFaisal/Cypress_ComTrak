@@ -1,7 +1,7 @@
-import PoolBuilderSelectors from '../../../Selectors/PoolBuilderSelectors.js'
+import PoolBuilderSelectors from '../../../../../selectors/poolBuilderSelectors.js'
 
-class EditFromDrafts{
-    EditPoolAndPublish() {
+class DuplicateSavedPool{
+    DuplicateAndVerifySavedPool() {
         cy.visit('https://comtrak.qa.dmclinical.com/')
         cy.origin('https://comtrak.qa.dmclinical.com/',
     
@@ -18,4 +18,4 @@ class EditFromDrafts{
           })
       }
 }
-export default new EditFromDrafts
+export default new DuplicateSavedPool

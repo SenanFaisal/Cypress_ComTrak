@@ -1,7 +1,7 @@
-import PoolBuilderSelectors from '../../../Selectors/PoolBuilderSelectors.js'
+import PoolBuilderSelectors from '../../../../../selectors/poolBuilderSelectors.js'
 
-class ReleaseAllPatients{
-    ReleaseAllPatients() {
+class ReviewFromDrafts{
+    ReviewFromDrafts() {
         cy.visit('https://comtrak.qa.dmclinical.com/')
         cy.origin('https://comtrak.qa.dmclinical.com/',
     
@@ -18,4 +18,4 @@ class ReleaseAllPatients{
           })
       }
 }
-export default new ReleaseAllPatients
+export default new ReviewFromDrafts

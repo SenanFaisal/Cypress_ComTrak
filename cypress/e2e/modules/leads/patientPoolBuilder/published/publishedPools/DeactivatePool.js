@@ -1,7 +1,7 @@
-import PoolBuilderSelectors from '../../../Selectors/PoolBuilderSelectors.js'
+import PoolBuilderSelectors from '../../../../../selectors/poolBuilderSelectors.js'
 
-class DuplicateSavedPool{
-    DuplicateAndVerifySavedPool() {
+class DeactivatePool{
+    InactivatePoolFromPublishedList() {
         cy.visit('https://comtrak.qa.dmclinical.com/')
         cy.origin('https://comtrak.qa.dmclinical.com/',
     
@@ -18,4 +18,4 @@ class DuplicateSavedPool{
           })
       }
 }
-export default new DuplicateSavedPool
+export default new DeactivatePool
