@@ -28,20 +28,20 @@ module.exports = defineConfig({
       }
     });
   },
-    "chromeWebSecurity": false,
-    "pageLoadTimeout": 250000,
-    "experimentalSessionAndOrigin": true,
-    "defaultCommandTimeout": 10000,
-      viewportWidth: 1920,
-      viewportHeight: 1080,
+  "chromeWebSecurity": false,
+  "pageLoadTimeout": 250000,
+  "experimentalSessionAndOrigin": true,
+  "defaultCommandTimeout": 10000,
+  viewportWidth: 1920,
+  viewportHeight: 1080,
 
   e2e: {
     specPattern: "cypress/e2e/**/*.cy.{js,jsx,ts,tsx}",
     experimentalOriginDependencies: true,
     setupNodeEvents(on, config) {
       // implement node event listeners here
-      browser: 'chrome'
     },
+    browser: 'chrome'
   },
 });
 // const { defineConfig } = require('cypress');
