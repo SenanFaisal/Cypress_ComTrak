@@ -17,7 +17,7 @@ const { defineConfig } = require("cypress");
 //     "types": ["cypress", "node", "cypress-real-events"]
 //   }
 
-module.exports = {
+module.exports = defineConfig({
   projectId: "it1mi4",
   ...(on, config) => {
     on("before:browser:launch", (browser, launchOptions) => {
@@ -28,24 +28,22 @@ module.exports = {
       }
     });
   },
-    "chromeWebSecurity": false,
-    "pageLoadTimeout": 250000,
-    "experimentalSessionAndOrigin": true,
-    "defaultCommandTimeout": 10000,
-      viewportWidth: 1920,
-      viewportHeight: 1080,
+  "chromeWebSecurity": false,
+  "pageLoadTimeout": 250000,
+  "experimentalSessionAndOrigin": true,
+  "defaultCommandTimeout": 10000,
+  viewportWidth: 1920,
+  viewportHeight: 1080,
 
   e2e: {
-
+    specPattern: "cypress/e2e/**/*.cy.{js,jsx,ts,tsx}",
+    experimentalOriginDependencies: true,
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
+    browser: 'chrome'
   },
-  e2e: {
-    experimentalOriginDependencies: true,
-    // other configurations
-  }
-};
+});
 
 // const { defineConfig } = require('cypress');
 
