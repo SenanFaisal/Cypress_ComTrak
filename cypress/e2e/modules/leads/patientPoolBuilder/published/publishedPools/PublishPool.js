@@ -66,4 +66,5 @@ class PublishPatientPool {
         })
     }
 }
+
 export default new PublishPatientPool
