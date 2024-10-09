@@ -57,7 +57,7 @@ class DataValidation {
         cy.wait(2000)
         cy.get(BTN_Review).click()
         cy.wait(1000)
-        cy.get('div:nth-child(5) > label > span.detail').should('contain', storedValue)
+        cy.get('div > div > div:nth-child(5) > label > span.detail').should('contain', storedValue)
         cy.get(Verify_Name).should('contain', Pool_Name)
         cy.get(Verify_Description).should('contain', Description)
         cy.get(Verify_State1).should('contain', ' New York ')

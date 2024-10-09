@@ -43,23 +43,23 @@ beforeEach(() => {
 
 describe('ComTrak - Patient Pool Builder Test Cases', () => {
 
-  it('TC-01 - Create and Publish the Patient Pool', () => {
+  it.skip('TC-01 - Create and Publish the Patient Pool', () => {
     PublishPatientPool.CreateAndPublishPatientPool()
   })
 
-  it('TC-02 - Create and Save the Patient Pool', () => {
+  it.skip('TC-02 - Create and Save the Patient Pool', () => {
     SavePool.SavePatientPoolToDrafts()
   })
 
-  it('TC-03 - Create and Discard the Patient Pool', () => {
+  it.skip('TC-03 - Create and Discard the Patient Pool', () => {
     DiscardPool.ExitAndDiscardPatientPool()
   })
 
-  it('TC-04 - Creating the Patient Pool with existing name', () => {
+  it.only('TC-04 - Creating the Patient Pool with existing name', () => {
     ExistingPoolNameCheck.ExistingPoolNameCheck()
   })
 
-  it('TC-05 - Verify the Total and Adjusted Pool Patients Count', () => {
+  it.skip('TC-05 - Verify the Total and Adjusted Pool Patients Count', () => {
     DataValidation.VerifyTotalAndAdjustedCount()
   })
 

@@ -1,4 +1,4 @@
-import PoolBuilderSelectors from '../../../../../selectors/poolBuilderSelectors.js'
+import PoolBuilderSelectors from '../../../../../Selectors/PoolBuilderSelectors'
 
 class ExistingNameCheck {
   //Verify the pool with existing name cannot be created
