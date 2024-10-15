@@ -24,3 +24,17 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 require('cypress-xpath');
+
+// Custom Command For Click
+Cypress.Commands.add('Click', (locator) => {
+    cy.log('------ Click : ' + locator + ' ------')
+    cy.xpath(locator).scrollIntoView()
+    cy.xpath(locator).click({ multiple: true })
+  })
+  
+  // Custom Command For Enter Text
+  Cypress.Commands.add('EnterText', (locator, text) => {
+    cy.log('------ Enter Text : ' + locator + ' ------')
+    cy.xpath(locator).scrollIntoView()
+    cy.xpath(locator).type(text).should('have.value', text)
+  })

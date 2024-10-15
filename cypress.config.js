@@ -6,6 +6,7 @@ module.exports = defineConfig({
   "pageLoadTimeout": 250000,
   "experimentalSessionAndOrigin": true,
   "defaultCommandTimeout": 10000,
+  failOnStatusCode: false,
   viewportWidth: 430,
   viewportHeight: 932,
   e2e: {
