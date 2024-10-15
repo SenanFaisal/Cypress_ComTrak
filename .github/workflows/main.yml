@@ -1,4 +1,4 @@
-name: Deployment of React-Shopify
+name: Innova Inspection App
 on:
   push:
     branches:
