@@ -2,7 +2,7 @@ name: Deployment of React-Shopify
 on:
   push:
     branches:
-      - Innova-inspection
+      - Innova-Inspection
 jobs:
   deploy:
     runs-on: ubuntu-latest
